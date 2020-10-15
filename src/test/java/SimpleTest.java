@@ -24,14 +24,14 @@ public class SimpleTest {
     }
 
     @Test
-    public void TestNotEnoughWeight()
+    public void testNotEnoughWeight()
     {
         var actualResult = getIMTResult(180f, 45f);
         Assert.assertEquals("выраженному дефициту массы тела", actualResult);
     }
 
     @Test
-    public void TestNotBadWeight()
+    public void testNotBadWeight()
     {
         var actualResult = getIMTResult(180f, 55f);
         Assert.assertEquals("недостаточной массе тела", actualResult);
